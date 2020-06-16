@@ -16,12 +16,12 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'ping') {
+    if (message.content === 'tangerine ping') {
 
        message.channel.send('pong');
 
        }
-    if (message.content === 'crash') {
+    if (message.content === 'tangerine crash') {
 
        proces.exit();
 
