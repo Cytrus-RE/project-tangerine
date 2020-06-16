@@ -1,25 +1,36 @@
 {
   "name": "Project Tangerine",
+
   "version": "0.0.1",
+
   "description": "A rewrite of Cytrus-re",
+
   "main": "main.js",
+
   "scripts": {
-    "start": "node main.js",
-    "node": "node main.js",
-    "pm2": "pm2 start main.js"
+
+    "start": "node main.js"
+
   },
-  "engines": {
-    "node": "10.x"
-  },
-  "repository": "github:Cytrus-RE/project-tangerine",
-  "author": "ƎƃᗡƎpǝʎoɹʇsǝᗡ#7416, CelestialCrafter#7255, Rexowogamer#1183, Commandblock6417#9366, Odyssey346#9848, Midou360#3517",
-  "license": "MIT",
+
   "dependencies": {
+
     "discord.js": "12.2.0",
+
     "request": "2.88.2"
   },
+
   "bugs": {
+
     "url": "https://github.com/Cytrus-RE/project-tangerine/issues"
+
   },
-  "homepage": "https://github.com/Cytrus-RE/project-tangerine"
+
+  "homepage": "https://github.com/Cytrus-RE/project-tangerine",
+
+  "repository": "github:Cytrus-RE/project-tangerine",
+
+  "author": "ƎƃᗡƎpǝʎoɹʇsǝᗡ#7416, CelestialCrafter#7255, Rexowogamer#1183, Commandblock6417#9366, Odyssey346#9848, Midou360#3517",
+  
+  "license": "MIT"
 }
