@@ -1,8 +1,8 @@
 ---
-name: 'Bot bug report'
-about: Create a report to help us improve our bot
-title: Bot Bug
-labels: Bot bug
+name: 'Bug report'
+about: Report a bug with the bot
+title: BUG:
+labels: bug
 assignees: ''
 
 ---
