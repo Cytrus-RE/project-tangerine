@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node botmain.js",
-    "install": "npm install"
+    "install": "npm install i"
   },
   "dependencies": {
     "discord.js": "^12.2.0"
