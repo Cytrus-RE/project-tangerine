@@ -8,6 +8,12 @@
 
   "main": "botmain.js",
 
+  "engines": {
+
+     "node": "11.10.0"
+  
+   },
+
   "scripts": {
 
     "start": "node botmain.js"
