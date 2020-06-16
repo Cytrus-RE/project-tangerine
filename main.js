@@ -8,7 +8,7 @@ client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret stored in H
 
 client.on('ready', () => {
 
-    console.log('Tangerine has started owo!');
+    console.log('Tangerine has started!');
 
 });
 
