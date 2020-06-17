@@ -1,2 +1,1 @@
-worker: npm install i
-extra: node botmain.js
+worker: npm install i && node botmain.js
