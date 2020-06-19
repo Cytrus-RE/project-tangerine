@@ -1,1 +1,1 @@
-worker: npm install i && node botmain.js
+worker: ./installdeps.sh && node botmain.js
