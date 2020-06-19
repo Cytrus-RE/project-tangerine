@@ -1,16 +1,28 @@
 {
-  "name": "Project Tangerine",
+  "name": "project-tangerine",
+
   "description": "A rewrite of Cytrus-re",
+
   "version": "0.0.1",
+
   "main": "botmain.js",
+
   "engines": {
+
     "node": "12.18.0"
+
   },
+
   "scripts": {
-    "start": "npm install i",
-    "owo": "node botmain.js"
+
+    "start": "node botmain.js",
+
   },
+
   "dependencies": {
-    "discord.js": "^12.2.0"
+
+    "discord.js": "12.2.0"
+
   }
+  
 }
