@@ -4,4 +4,4 @@ Project Tangerine is a rewrite of a rewritten bot. Rewriteception. Whatever. It'
 ```js 
 npm install
 ```
-Yeah, it's that simple. Make sure you're CD'd into the folder, ofcourse, otherwise it will not work.
+Yeah, it's that simple. Make sure you're CD'd into the folder, otherwise it will not work.
