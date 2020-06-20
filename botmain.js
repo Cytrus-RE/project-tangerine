@@ -3,7 +3,13 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
-client.login(process.env.BOT_TOKEN); // BOT_TOKEN is the client secret stored in Heroku/your .env file if hosting locally
+client.login(process.env.BOT_TOKEN); // BOT_TOKEN is the client token stored in Heroku/your environment variables if hosting locally.
+/* 
+    If you're hosting the bot locally, it is recommended to replace the above line with
+    your token from the Discord dev portal like so: client.login('your-token'), where 
+    your-token is the token found in the app's bot section in the Discord dev page.
+    You should leave the quotes in.
+*/
 
 
 client.on('ready', () => {
@@ -16,8 +22,8 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === "tangerine ping") {
 
+<<<<<<< HEAD
         message.channel.send("Pong!");
 
     }
@@ -34,4 +40,7 @@ client.on('message', message => {
             console.log(err).catch();
         }
     }
+=======
+
+>>>>>>> ce0cbda1ee3580b93bb5e291f8ae58261a47609a
 });
