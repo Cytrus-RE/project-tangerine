@@ -28,7 +28,7 @@ client.on('message', message => {
     }
     if (message.content === "tangerine crash") {
     	message.channel.send("Bye...");
-        process.exit();
+        process.exit(69);
 
     }
 
