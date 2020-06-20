@@ -1,31 +1,16 @@
 {
-  
   "name": "project-tangerine",
-
   "description": "A rewrite of Cytrus-re, the Discord bot you've always wanted",
-
   "version": "0.0.1",
-
   "homepage": "https://cytrus-re.github.io/project-tangerine.html",
-
   "bugs": "https://github.com/Cytrus-RE/project-tangerine/issues",
-
   "license": "MIT",
-
   "repository": "github:Cytrus-RE/project-tangerine",
-
   "main": "botmain.js",
-
   "scripts": {
-
     "start": "node botmain.js"
-
   },
-
   "dependencies": {
-
     "discord.js": "^12.2.0"
-
   }
-
 }
