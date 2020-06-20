@@ -26,5 +26,12 @@ client.on('message', message => {
         message.channel.send("**Project Tangerine** is a rewrite of Cytrus-RE, currently in development.");
 
     }
-
+    if (message.content === "tangerine pull") {
+        try {
+            exec("git pull https://github.com/Cytrus-RE/project-tangerine");
+            message.reply("I've pulled changes, please restart the bot")
+        } catch (err) {
+            console.log(err).catch();
+        }
+    }
 });
