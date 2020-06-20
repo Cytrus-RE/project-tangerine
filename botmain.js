@@ -26,10 +26,5 @@ client.on('message', message => {
         message.channel.send("**Project Tangerine** is a rewrite of Cytrus-RE, currently in development.");
 
     }
-    if (message.content === "tangerine crash") {
-    	message.channel.send("Bye...");
-        process.exit(69);
-
-    }
 
 });
