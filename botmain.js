@@ -31,12 +31,17 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-
-    if(message.content === 'say') {
-        let args = message.content.substring(PREFIX.length).split(" ");
-        const sayMessage = args.join(" ");
-        message.channel.send(sayMessage);
-        // Thank you StackOverflow guy
+    try{
+        if(message.content === 'say') {
+            let args = message.content.substring(PREFIX.length).split(" ");
+            const sayMessage = args.join(" ");
+            message.channel.send(sayMessage);
+            // Thank you StackOverflow guy
+        }
+    } catch(error) {    
+        message.channel.send(client.errors.genericError + error).catch();
+        console.log(error)
     }
+
 
 });
