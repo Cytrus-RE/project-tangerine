@@ -32,15 +32,15 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    try{
-        if(message.content === 'say') {
+    try {
+        if (message.content === "say") {
             let args = message.content.substring(PREFIX.length).split(" ");
             const sayMessage = args.join(" ");
             message.channel.send(sayMessage);
             // Thank you StackOverflow guy
         }
     } catch(error) {    
-        message.channel.send(client.errors.genericError + error).catch();
+        message.channel.send("There was an error!\n" + error).catch();
         console.log(error)
     }
 
@@ -49,7 +49,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     var exec = require('child_process').exec, child;
-    if(message.content === 'pullchanges') {
+    if (message.content === "pullchanges") {
         await exec('git pull origin master')
         // I'm confident that this will work. If it doesn't, well, I don't care, I'm not spending 10 hours getting git pulling to work
         message.channel.send('Changes were pulled. Rebooting!')
