@@ -1,6 +1,9 @@
 const Discord = require('discord.js');
 
-const client = new Discord.Client();
+const client = new Discord.Client({
+    disableEveryone: true, // I'm fairly certain we don't want to ping everyone in a server.
+    disabledEvents: ['TYPING_START'] // This disables the "is typing..." text under the messagebox in the Discord client
+});
 
 
 client.login(process.env.BOT_TOKEN); // BOT_TOKEN is the client token stored in Heroku/your environment variables if hosting locally.
