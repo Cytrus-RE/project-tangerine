@@ -29,3 +29,14 @@ client.on('message', message => {
 			message.channel.send('no');
 		}
 });
+
+client.on('message', message => {
+
+    if(message.content === 'say') {
+        let args = message.content.substring(PREFIX.length).split(" ");
+        const sayMessage = args.join(" ");
+        message.channel.send(sayMessage);
+        // Thank you StackOverflow guy
+    }
+
+});
