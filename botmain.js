@@ -50,11 +50,13 @@ client.on('message', message => {
 client.on('message', message => {
     var exec = require('child_process').exec, child;
     if (message.content === "pullchanges") {
-        await exec('git pull origin master')
+        exec('git pull origin master')
         // I'm confident that this will work. If it doesn't, well, I don't care, I'm not spending 10 hours getting git pulling to work
         message.channel.send('Changes were pulled. Rebooting!')
-        await exec('node botmain.js')
+        exec('node botmain.js')
         setTimeout(5)
         process.exit();
+        // This isn't needed on Heroku
     }
 });
+    
